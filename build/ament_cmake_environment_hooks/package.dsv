@@ -1,0 +1,4 @@
+source;share/skid_steer_drive_plugin/local_setup.bash
+source;share/skid_steer_drive_plugin/local_setup.dsv
+source;share/skid_steer_drive_plugin/local_setup.sh
+source;share/skid_steer_drive_plugin/local_setup.zsh
