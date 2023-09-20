@@ -429,7 +429,7 @@ namespace gazebo
       std::lock_guard<std::mutex> scoped_lock(lock_);
 
       double u = target_x_;
-      double v = target_y_;
+      //double v = target_y_;
       double r = target_rot_;
 
       /*wheel_sep_length --> l
@@ -477,8 +477,8 @@ namespace gazebo
     {
       double vfl = joints_[0]->GetVelocity(0);
       double vfr = joints_[1]->GetVelocity(0);
-      double vbl = joints_[2]->GetVelocity(0);
-      double vbr = joints_[3]->GetVelocity(0);
+      //double vbl = joints_[2]->GetVelocity(0);
+      //double vbr = joints_[3]->GetVelocity(0);
 
       double seconds_since_last_update = (_current_time - last_encoder_update_).Double();
       last_encoder_update_ = _current_time;
@@ -488,8 +488,8 @@ namespace gazebo
       // Book: Sigwart 2011 Autonompus Mobile Robots page:337
       double sfl = vfl * (wheel_radius_)*seconds_since_last_update;
       double sfr = vfr * (wheel_radius_)*seconds_since_last_update;
-      double sbl = vbl * (wheel_radius_)*seconds_since_last_update;
-      double sbr = vbr * (wheel_radius_)*seconds_since_last_update;
+      //double sbl = vbl * (wheel_radius_)*seconds_since_last_update;
+      //double sbr = vbr * (wheel_radius_)*seconds_since_last_update;
 
       // front left and front right have different values of distance moved
       // front and back wheels on same side have same value of distance moved
