@@ -3,7 +3,7 @@ Skid Steer plugin for a 4 wheel skid steer drive robot
 
 #This plugin has been modified from the Diff-drive-plugin
 
-#make sure to add this in the bashscript for ease
+#make sure to edit and add this in the bashscript for ease
 ```
 export GAZEBO_PLUGIN_PATH=$GAZEBO_PLUGIN_PATH:path/to/plugin/skid_steer_drive_plugin/build
 ```
